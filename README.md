@@ -2,6 +2,8 @@
 
 https://cssclub.nyc/
 
-A meetup with style.
+A friendly meetup for people who style.
 
-⚠️ 🐲 Just getting this started.
+⚠️ _NOTE_ This is heavy work in progress.
+
+Reach out to contact@cssclub.nyc if you have questions and/or want to get involved.
