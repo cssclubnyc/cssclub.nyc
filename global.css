@@ -84,7 +84,13 @@ h4 + p {
 
 .home-banner {
   align-items: center;
-  background-color: var(--color-accent-low);
+  background: radial-gradient(
+      farthest-corner circle at 80% 41%,
+      #0000 0%,
+      65%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    var(--color-accent-low) url("/images/noise.png") repeat;
   color: var(--color-white);
   display: flex;
   height: 240px;
