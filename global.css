@@ -94,6 +94,7 @@ h4 + p {
   color: var(--color-white);
   display: flex;
   height: 240px;
+  overflow: hidden;
   justify-content: center;
 }
 
@@ -105,7 +106,9 @@ h4 + p {
 
 /* Form */
 .bd-form {
-  margin-top: var(--sp5);
+  background: transparent url("/images/squiggly.svg") no-repeat top left;
+  margin-top: var(--sp4);
+  padding-top: var(--sp5);
 }
 
 label {
@@ -166,7 +169,17 @@ footer {
 /* Home */
 .home-main {
   margin: 0 auto;
+  position: relative;
   width: 93%;
+}
+
+.home-main::before {
+  background: transparent url("/images/squiggly.svg") repeat-x left;
+  content: "";
+  display: block;
+  height: 12px;
+  transform: translateY(-6px);
+  width: 100%;
 }
 
 .home-contents {
@@ -177,6 +190,18 @@ footer {
 
 .home-title {
   font-size: var(--font-size-5);
+  position: relative;
+}
+
+.home-title::before {
+  background: transparent url("/images/star.svg") no-repeat top left;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  left: -2.5rem;
+  position: absolute;
+  top: 0.5rem;
+  width: 24px;
 }
 
 @media (min-width: 800px) {
@@ -194,10 +219,23 @@ footer {
 
   .home-banner,
   .home-main {
+    height: 100%;
     width: 50%;
   }
 
-  .home-banner {
+  .home-main {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--sp2);
+  }
+
+  .home-main::before {
+    background: transparent url("/images/squiggly-vert.svg") repeat-y top;
     height: 100%;
+    left: 0;
+    position: absolute;
+    transform: translateX(-6px);
+    width: 12px;
   }
 }
