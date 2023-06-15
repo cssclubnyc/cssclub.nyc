@@ -6,6 +6,6 @@ This is the repo for the public website.
 
 https://cssclub.nyc/
 
-⚠️ _NOTE_ This is heavy work in progress. See https://github.com/cssclubnyc/cssclub.nyc/discussions/3
+⚠️ _NOTE_ This is heavy work in progress. See the [ Starting CSS Club NYC discussion](https://github.com/cssclubnyc/cssclub.nyc/discussions/3).
 
 Reach out to contact@cssclub.nyc if you have questions and/or want to get involved.
