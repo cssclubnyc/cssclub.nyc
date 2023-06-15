@@ -1,2 +1,64 @@
-<h1>NYC CSS Club</h1>
-<p>A CSS meetup with style</p>
+<!DOCTYPE html>
+<html lang="en" class="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSS Club NYC - A friendly meetup for people who style.</title>
+    <link rel="stylesheet" href="https://use.typekit.net/quf5crl.css" />
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>
+    <div class="home-layout">
+      <header class="home-banner">
+        <picture>
+          <source
+            srcset="/images/css-club-nyc-lorg.svg"
+            media="(min-width: 800px)"
+          />
+          <img
+            class="home-hero-img"
+            src="/images/css-club-nyc-smol.svg"
+            alt="CSS Club New York City"
+          />
+        </picture>
+      </header>
+
+      <main class="home-main">
+        <div class="home-contents">
+          <h2 class="home-title">A joyful meetup for people who style.</h2>
+          <p>
+            We’re getting this going soon. Put your email in the box and we’ll
+            keep you updated.
+          </p>
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/contact"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/contact', 'popupwindow')"
+            class="bd-form"
+          >
+            <label for="bd-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="bd-email"
+              placeholder="cssisgood@earthlink.net"
+            />
+            <button class="btn" type="submit">Join the club</button>
+            <p class="bd-powered">
+              Powered by
+              <a href="https://buttondown.email/refer/contact" target="_blank"
+                >Buttondown</a
+              >
+            </p>
+          </form>
+        </div>
+        <footer>
+          <a href="/code-of-conduct">Code of conduct</a>
+          <a href="mailto:contact@cssclub.nyc">contact@cssclub.nyc</a>
+          <a href="https://github.com/cssclubnyc/cssclub.nyc">Github</a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

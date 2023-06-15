@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --sp0: 0.25rem;
+  --sp1: 0.5rem;
+  --sp2: 1rem;
+  --sp3: 1.5rem;
+  --sp4: 2rem;
+  --sp5: 2.5rem;
+
+  --radius-low: 4px;
+
+  --font-size-0: 0.75rem;
+  --font-size-1: 0.875rem;
+  --font-size-2: 1rem;
+  --font-size-3: 1.125rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 1.875rem;
+
+  --color-accent: hsl(331, 100%, 86%);
+  --color-accent-low: hsl(338, 15%, 21%);
+  --color-white: #fff;
+  --color-grey-15: #272727;
+  --color-grey-60: #999999;
+  --color-grey-80: #ccc;
+  --color-text: var(--color-grey-15);
+}
+
+html {
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-size: var(--font-size-2);
+}
+
+body {
+  color: var(--color-text);
+  margin: 0;
+}
+
+a {
+  color: #272727;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h2 + p,
+h3 + p,
+h4 + p {
+  margin-top: var(--sp2);
+}
+
+.standard-restricted-width {
+  margin: 0 auto;
+  max-width: 860px;
+  width: 93%;
+}
+
+.longform-content {
+  line-height: 1.5;
+  margin-top: var(--sp3);
+  font-size: var(--font-size-3);
+}
+
+/* Logo */
+.logo {
+  display: block;
+  max-width: 400px;
+  rotate: 5deg;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+/* Banner */
+.banner-standard {
+  padding-top: var(--sp2);
+}
+
+.home-banner {
+  align-items: center;
+  background: radial-gradient(
+      farthest-corner circle at 80% 41%,
+      #0000 0%,
+      65%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    var(--color-accent-low) url("/images/noise.png") repeat;
+  color: var(--color-white);
+  display: flex;
+  height: 240px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.home-hero-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+/* Form */
+.bd-form {
+  background: transparent url("/images/squiggly.svg") no-repeat top left;
+  margin-top: var(--sp4);
+  padding-top: var(--sp5);
+}
+
+label {
+  display: block;
+  font-size: var(--font-size-0);
+}
+
+input,
+.btn {
+  border-radius: var(--radius-low);
+  font-family: inherit;
+}
+
+input {
+  border: 1px solid var(--color-grey-80);
+  display: block;
+  font-size: var(--font-size-2);
+  margin: var(--sp0) 0 var(--sp1) 0;
+  padding: var(--sp2);
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--color-grey-60);
+}
+
+.btn {
+  appearance: none;
+  background: var(--color-accent);
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  display: block;
+  font-size: var(--font-size-2);
+  padding: var(--sp2);
+  width: 100%;
+}
+
+.bd-powered {
+  font-size: var(--font-size-0);
+  margin-top: var(--sp1);
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-size-1);
+  gap: var(--sp2);
+  padding: var(--sp4) 0;
+}
+
+.home-main footer {
+  justify-content: center;
+}
+
+/* Home */
+.home-main {
+  margin: 0 auto;
+  position: relative;
+  width: 93%;
+}
+
+.home-main::before {
+  background: transparent url("/images/squiggly.svg") repeat-x left;
+  content: "";
+  display: block;
+  height: 12px;
+  transform: translateY(-6px);
+  width: 100%;
+}
+
+.home-contents {
+  margin: 0 auto;
+  padding-top: var(--sp3);
+  max-width: 400px;
+}
+
+.home-title {
+  font-size: var(--font-size-5);
+  position: relative;
+}
+
+.home-title::before {
+  background: transparent url("/images/star.svg") no-repeat top left;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  left: -2.5rem;
+  position: absolute;
+  top: 0.5rem;
+  width: 24px;
+}
+
+@media (min-width: 800px) {
+  .home,
+  .home body {
+    height: 100%;
+  }
+
+  .home-layout {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .home-banner,
+  .home-main {
+    height: 100%;
+    width: 50%;
+  }
+
+  .home-main {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--sp2);
+  }
+
+  .home-main::before {
+    background: transparent url("/images/squiggly-vert.svg") repeat-y top;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform: translateX(-6px);
+    width: 12px;
+  }
+}
