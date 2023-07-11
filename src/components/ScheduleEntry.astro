@@ -1,0 +1,18 @@
+---
+export interface Props {
+  time: string;
+  title: string;
+  desc?: string;
+}
+
+const { time, title, desc = null } = Astro.props;
+---
+
+<li>
+  <p>{time}</p>
+
+  <div>
+    <p>{title}</p>
+    {desc != null && <p>{desc}</p>}
+  </div>
+</li>

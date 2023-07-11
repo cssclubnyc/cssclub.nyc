@@ -1,0 +1,9 @@
+---
+import nextEvent from "@data/nextEvent.js";
+---
+
+<h3>Next meetup</h3>
+<p>{nextEvent.datetime}</p>
+
+<p><a href={nextEvent.location.url}>{nextEvent.location.title}</a></p>
+<p>{nextEvent.location.addr}</p>
