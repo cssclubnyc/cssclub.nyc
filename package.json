@@ -1,0 +1,21 @@
+{
+  "name": "cssclub.nyc",
+  "description": "A joyful meetup for people who style.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cssclubnyc/cssclub.nyc.git",
+  "contributors": [
+    "Tyler Gaw <me@tylergaw.com> (https://tylergaw.com)"
+  ],
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "astro": "2.8.1"
+  }
+}

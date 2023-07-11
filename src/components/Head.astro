@@ -1,0 +1,22 @@
+---
+export interface Props {
+  pageTitle?: string;
+}
+
+import GlobalStyle from "@components/GlobalStyle.astro";
+
+const { pageTitle = "CSS Club NYC - A joyful meetup for people who style." } =
+  Astro.props;
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>{pageTitle}</title>
+  <meta
+    name="description"
+    content="CSS Club NYC is a monthly meetup focused on CSS and related web technology."
+  />
+  <link rel="stylesheet" href="https://use.typekit.net/quf5crl.css" />
+  <GlobalStyle />
+</head>

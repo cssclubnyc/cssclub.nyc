@@ -1,0 +1,47 @@
+---
+import Head from "@components/Head.astro";
+import MailingListForm from "@components/MailingListForm.astro";
+import Footer from "@components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="home">
+  <Head />
+  <body>
+    <div class="home-layout">
+      <header class="home-banner">
+        <picture>
+          <source
+            srcset="/images/css-club-nyc-lorg.svg"
+            media="(min-width: 800px)"
+          />
+          <img
+            class="home-hero-img"
+            src="/images/css-club-nyc-smol.svg"
+            alt="CSS Club New York City"
+          />
+        </picture>
+      </header>
+
+      <main class="home-main">
+        <div class="home-contents">
+          <h2 class="home-title">A joyful meetup for people who style.</h2>
+          <div>
+            <p>
+              We’re getting this going soon. Put your email in the box and we’ll
+              keep you updated.
+            </p>
+            <p>
+              Read about why we’re doing this and what the format will be in “<a
+                href="https://github.com/cssclubnyc/cssclub.nyc/discussions/3"
+                >Starting CSS Club NYC</a
+              >”.
+            </p>
+          </div>
+          <MailingListForm />
+        </div>
+        <Footer />
+      </main>
+    </div>
+  </body>
+</html>
