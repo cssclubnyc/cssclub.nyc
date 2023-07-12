@@ -1,5 +1,8 @@
 import { defineConfig } from "astro/config";
 
+console.log("DEPLOY_URL", process.env.DEPLOY_URL);
+console.log("DEPLOY_PRIME_URL", process.env.DEPLOY_PRIME_URL);
+
 // https://astro.build/config
 export default defineConfig({
   inlineStylesheets: "auto",
