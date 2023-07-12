@@ -6,6 +6,28 @@ import Layout from "@layouts/Standard.astro";
   <div class="longform-content">
     <h1>Speak at CSS Club NYC</h1>
     <p>Intro paragraph here to give details about the 15min talks.</p>
-    <div>Submission form</div>
+    <div class="form-container">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf7OxU6y_ivudgPwhLeNa-pmu23D7c0BDwyxkbA5JelQeWwJA/viewform?embedded=true"
+        >Loading…</iframe
+      >
+    </div>
   </div>
 </Layout>
+
+<style>
+  .form-container {
+    background-color: #f9f9f9;
+    border-radius: var(--radius-low);
+    padding-top: var(--sp4);
+    margin-bottom: var(--sp4);
+  }
+
+  iframe {
+    border: 0;
+    height: 1800px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+</style>
