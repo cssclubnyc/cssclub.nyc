@@ -3,21 +3,29 @@ import entries from "@data/schedule.js";
 import ScheduleEntry from "./ScheduleEntry.astro";
 ---
 
-<h3>Schedule-ish</h3>
-<p>
-  We’ll enjoy 15 minute talks from three speakers. After, we’ll have time to
-  meet and chat with your club mates. Complementary alcoholic and non-alcoholic
-  beverages will be available throughout.
-</p>
+<div class="container">
+  <h3 class="heading-mini">Schedule-ish</h3>
+  <p>
+    We’ll enjoy 15 minute talks from three speakers. After, we’ll have time to
+    meet and chat with your club mates. Complementary alcoholic and
+    non-alcoholic beverages will be available throughout.
+  </p>
 
-<ul>
-  {entries.map((entry) => <ScheduleEntry {...entry} />)}
-</ul>
+  <ul>
+    {entries.map((entry) => <ScheduleEntry {...entry} />)}
+  </ul>
+</div>
 
 <style>
+  .container {
+    background: transparent url("/images/squiggly-pink.svg") no-repeat bottom
+      left;
+    padding: var(--sp4) 0;
+  }
+
   ul {
     list-style: none;
-    margin: 0;
+    margin: var(--sp5) 0 0 0;
     padding: 0;
   }
 </style>

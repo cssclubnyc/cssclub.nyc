@@ -44,7 +44,8 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     margin: 0;
   }
 
@@ -52,6 +53,14 @@
   h3 + p,
   h4 + p {
     margin-top: var(--sp2);
+  }
+
+  .heading-mini {
+    font-size: var(--font-size-12);
+  }
+
+  .heading-mini + * {
+    margin-top: 0.125rem;
   }
 
   .standard-restricted-width {
@@ -66,11 +75,15 @@
     font-size: var(--font-size-18);
   }
 
-  /* Form */
   .bd-form {
-    background: transparent url("/images/squiggly.svg") no-repeat top left;
     margin-top: var(--sp4);
     padding-top: var(--sp5);
+  }
+
+  .bd-powered {
+    font-size: var(--font-size-12);
+    margin-top: var(--sp1);
+    text-align: right;
   }
 
   label {
@@ -78,8 +91,7 @@
     font-size: var(--font-size-12);
   }
 
-  input,
-  .btn {
+  input {
     border-radius: var(--radius-low);
     font-family: inherit;
   }
@@ -101,17 +113,21 @@
     appearance: none;
     background: var(--color-accent);
     border: none;
+    border-radius: var(--radius-low);
     color: var(--color-text);
     cursor: pointer;
-    display: block;
+    display: inline-block;
+    font-family: inherit;
     font-size: var(--font-size-16);
-    padding: var(--sp2);
-    width: 100%;
+    padding: var(--sp2) var(--sp3);
+    text-align: center;
+    text-decoration: none;
   }
 
-  .bd-powered {
-    font-size: var(--font-size-12);
-    margin-top: var(--sp1);
-    text-align: right;
+  .btn[disabled],
+  .btn.disabled {
+    background-color: var(--color-grey-80);
+    cursor: default;
+    pointer-events: none;
   }
 </style>
