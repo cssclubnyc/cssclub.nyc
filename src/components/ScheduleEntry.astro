@@ -9,10 +9,38 @@ const { time, title, desc = null } = Astro.props;
 ---
 
 <li>
-  <p>{time}</p>
+  <p class="time">{time}</p>
 
-  <div>
-    <p>{title}</p>
-    {desc != null && <p>{desc}</p>}
+  <div class="contents">
+    <p class="title">{title}</p>
+    {desc != null && <p class="desc" set:html={desc} />}
   </div>
 </li>
+
+<style>
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: var(--sp2);
+  }
+
+  .time {
+    margin: 0;
+    max-width: 25%;
+    flex: 1;
+  }
+
+  .contents {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .title,
+  .desc {
+    margin: 0;
+  }
+
+  .desc {
+    font-size: var(--font-size-12);
+  }
+</style>
