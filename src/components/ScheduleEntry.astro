@@ -22,6 +22,32 @@ const { time, title, desc = null } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: var(--sp2);
+    position: relative;
+  }
+
+  li::before {
+    border-left: 1px dashed var(--color-grey-80);
+    content: "";
+    color: var(--color-accent);
+    height: 100%;
+    position: absolute;
+    transform: translateX(-1.5rem) translateY(0.3rem);
+  }
+
+  li:last-child::before {
+    border: 0;
+  }
+
+  li::after {
+    --size: 9px;
+    background-color: var(--color-accent);
+    border-radius: calc(var(--size) / 2);
+    content: "";
+    display: block;
+    height: var(--size);
+    position: absolute;
+    transform: translateX(-1.75rem) translateY(0.3rem);
+    width: var(--size);
   }
 
   .time {
