@@ -5,18 +5,27 @@ export interface Props {
 
 import GlobalStyle from "@components/GlobalStyle.astro";
 
-const { pageTitle = "CSS Club NYC - A joyful meetup for people who style." } =
-  Astro.props;
+const defaultPageTitle = "CSS Club NYC - A joyful meetup for people who style.";
+const defaultPageDesc =
+  "CSS Club NYC is a monthly meetup focused on CSS and related web technology.";
+const { pageTitle = defaultPageTitle } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL("/images/social/event-aug-23.jpg", Astro.url);
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>{pageTitle}</title>
-  <meta
-    name="description"
-    content="CSS Club NYC is a monthly meetup focused on CSS and related web technology."
-  />
+  <meta name="description" content={defaultPageDesc} />
+  <meta property="og:title" content={defaultPageTitle} />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content={defaultPageDesc} />
+  <meta property="og:image" content={socialImageURL} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="https://use.typekit.net/quf5crl.css" />
   <GlobalStyle />
 </head>
