@@ -14,4 +14,4 @@ A joyful meetup for people who style.
 
 ## Contributing to this repo
 
-If you see a typo or a bug, PRs and issues are always welcome. See [docs/contributing](docs/contributing) for details.
+If you see a typo or a bug, PRs and issues are always welcome. See [docs/contributing](docs/contributing.md) for details.
