@@ -1,0 +1,122 @@
+<style is:global>
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --sp0: 0.25rem;
+    --sp1: 0.5rem;
+    --sp2: 1rem;
+    --sp3: 1.5rem;
+    --sp4: 2rem;
+    --sp5: 2.5rem;
+
+    --radius-low: 4px;
+
+    --font-size-12: 0.75rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-24: 1.5rem;
+    --font-size-30: 1.875rem;
+
+    --color-accent: hsl(331, 100%, 86%);
+    --color-accent-low: hsl(338, 15%, 21%);
+    --color-white: #fff;
+    --color-grey-15: #272727;
+    --color-grey-60: #999999;
+    --color-grey-80: #ccc;
+    --color-text: var(--color-grey-15);
+  }
+
+  html {
+    font-family: "aktiv-grotesk-extended", sans-serif;
+    font-size: var(--font-size-16);
+  }
+
+  body {
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  a {
+    color: #272727;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  h2 + p,
+  h3 + p,
+  h4 + p {
+    margin-top: var(--sp2);
+  }
+
+  .heading-mini {
+    font-size: var(--font-size-12);
+  }
+
+  .heading-mini + * {
+    margin-top: 0.125rem;
+  }
+
+  .standard-restricted-width {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 93%;
+  }
+
+  .longform-content {
+    line-height: 1.5;
+    margin-top: var(--sp3);
+    font-size: var(--font-size-18);
+  }
+
+  label {
+    display: block;
+    font-size: var(--font-size-12);
+  }
+
+  input {
+    border-radius: var(--radius-low);
+    font-family: inherit;
+  }
+
+  input {
+    border: 1px solid var(--color-grey-80);
+    display: block;
+    font-size: var(--font-size-14);
+    margin: var(--sp0) 0 var(--sp1) 0;
+    padding: var(--sp2);
+    width: 100%;
+  }
+
+  input::placeholder {
+    color: var(--color-grey-60);
+  }
+
+  .btn {
+    appearance: none;
+    background: var(--color-accent);
+    border: none;
+    border-radius: var(--radius-low);
+    color: var(--color-text);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: var(--font-size-16);
+    padding: var(--sp2) var(--sp3);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .btn[disabled],
+  .btn.disabled {
+    background-color: var(--color-grey-80);
+    cursor: default;
+    pointer-events: none;
+  }
+</style>

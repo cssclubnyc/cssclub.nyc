@@ -1,0 +1,136 @@
+---
+import Head from "@components/Head.astro";
+import MailingListForm from "@components/MailingListForm.astro";
+import Footer from "@components/Footer.astro";
+import Schedule from "@components/Schedule.astro";
+import EventSummary from "@components/EventSummary.astro";
+---
+
+<style>
+  .banner {
+    align-items: center;
+    background: radial-gradient(
+        farthest-corner circle at 80% 41%,
+        #0000 0%,
+        65%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      var(--color-accent-low) url("/images/noise.png") repeat;
+    color: var(--color-white);
+    display: flex;
+    height: 240px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .hero-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  .contents {
+    margin: 0 auto;
+    position: relative;
+    width: 93%;
+  }
+
+  .contents::before {
+    background: transparent url("/images/squiggly.svg") repeat-x left;
+    content: "";
+    display: block;
+    height: 12px;
+    transform: translateY(-6px);
+    width: 100%;
+  }
+
+  .contents-inner {
+    margin: 0 auto;
+    padding-top: var(--sp3);
+    padding-bottom: var(--sp3);
+    max-width: 470px;
+  }
+
+  .title {
+    font-size: var(--font-size-30);
+    max-width: 20ch;
+    position: relative;
+  }
+
+  .title::before {
+    background: transparent url("/images/star-pink.svg") no-repeat top left;
+    content: "";
+    display: inline-block;
+    height: 24px;
+    left: -2.5rem;
+    position: absolute;
+    top: 0.5rem;
+    width: 24px;
+  }
+
+  @media (min-width: 800px) {
+    html,
+    body {
+      height: 100%;
+    }
+
+    .banner {
+      position: fixed;
+      height: 100vh;
+      height: 100dvh;
+      width: 45%;
+    }
+
+    .contents {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 0 0 auto;
+      padding: 0 var(--sp4);
+      width: 55%;
+    }
+
+    .contents::before {
+      background: transparent url("/images/squiggly-vert.svg") repeat-y top;
+      height: 100vh;
+      height: 100dvh;
+      position: fixed;
+      top: 6px;
+      transform: translateX(-37px);
+      width: 12px;
+    }
+
+    .contents-inner {
+      padding-top: calc(var(--sp1) * 12);
+    }
+  }
+</style>
+
+<html lang="en">
+  <Head />
+  <body>
+    <header class="banner">
+      <picture>
+        <source
+          srcset="/images/css-club-nyc-lorg.svg"
+          media="(min-width: 800px)"
+        />
+        <img
+          class="hero-img"
+          src="/images/css-club-nyc-smol.svg"
+          alt="CSS Club New York City"
+        />
+      </picture>
+    </header>
+
+    <main class="contents">
+      <div class="contents-inner">
+        <h2 class="title">A joyful meetup for people who style.</h2>
+        <EventSummary />
+        <Schedule />
+        <MailingListForm />
+      </div>
+      <Footer />
+    </main>
+  </body>
+</html>

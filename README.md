@@ -2,10 +2,16 @@
 
 A joyful meetup for people who style.
 
-This is the repo for the public website.
+- This is the repo for the public website https://cssclub.nyc/
+- Questions and/or want to get involved: contact@cssclub.nyc
+- Speak at CSS Club https://cssclub.nyc/cfp
+- Join our Discord https://discord.gg/hnmkbEK6
 
-https://cssclub.nyc/
+## Next meetup
 
-⚠️ _NOTE_ This is heavy work in progress. See the [ Starting CSS Club NYC discussion](https://github.com/cssclubnyc/cssclub.nyc/discussions/3).
+- Tuesday, August 15th at 7pm
+- Resobox East Village - 91 E 3rd St, NYC
 
-Reach out to contact@cssclub.nyc if you have questions and/or want to get involved.
+## Contributing to this repo
+
+If you see a typo or a bug, PRs and issues are always welcome. See [docs/contributing](docs/contributing) for details.

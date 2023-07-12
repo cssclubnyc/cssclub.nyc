@@ -1,0 +1,33 @@
+---
+import nextEvent from "@data/nextEvent.js";
+---
+
+<div class="container">
+  <h3 class="heading-mini">Next meetup</h3>
+  <p>{nextEvent.datetime}</p>
+
+  <div class="location">
+    <p class="loc-title">
+      <a href={nextEvent.location.url}>{nextEvent.location.title}</a>
+    </p>
+    <p class="addr">{nextEvent.location.addr}</p>
+  </div>
+
+  <a href="" class="btn disabled">Tickets available soon</a>
+</div>
+
+<style>
+  .container {
+    background: transparent url("/images/squiggly-pink.svg") no-repeat bottom
+      left;
+    padding: var(--sp5) 0;
+  }
+
+  .loc-title {
+    margin-bottom: 0;
+  }
+
+  .addr {
+    margin-top: 0;
+  }
+</style>

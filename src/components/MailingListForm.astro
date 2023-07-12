@@ -1,0 +1,56 @@
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/contact"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/contact', 'popupwindow')"
+  class="bd-form"
+>
+  <label for="bd-email">Mailing list</label>
+  <div class="field">
+    <input
+      type="email"
+      name="email"
+      id="bd-email"
+      placeholder="cssisgood@hotmail.com"
+      required
+    />
+    <button class="btn" type="submit">Subscribe</button>
+  </div>
+  <p class="bd-powered">
+    Powered by
+    <a href="https://buttondown.email/refer/contact" target="_blank"
+      >Buttondown</a
+    >
+  </p>
+</form>
+
+<style>
+  .bd-form {
+    margin-top: var(--sp5);
+  }
+
+  .field {
+    display: flex;
+    padding-top: var(--sp0);
+  }
+
+  .field input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    margin: 0;
+  }
+
+  .field .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: var(--font-size-14);
+    padding: var(--sp2);
+  }
+
+  .bd-powered {
+    font-size: var(--font-size-12);
+    margin-top: var(--sp1);
+    text-align: right;
+  }
+</style>
