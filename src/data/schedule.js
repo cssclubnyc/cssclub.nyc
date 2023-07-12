@@ -1,8 +1,8 @@
 export default [
   {
-    time: "Soon",
+    time: "Now",
     title: "Get your ticket",
-    desc: "Tickets are $15.",
+    desc: "<a href='https://ti.to/css-club-nyc/august-2023'>Tickets are $15</a>.",
   },
   {
     time: "6:45pm",
