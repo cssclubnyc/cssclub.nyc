@@ -5,7 +5,7 @@ A joyful meetup for people who style.
 - This is the repo for the public website https://cssclub.nyc/
 - Questions and/or want to get involved: contact@cssclub.nyc
 - Speak at CSS Club https://cssclub.nyc/cfp
-- Join our Discord https://discord.gg/hnmkbEK6
+- Join our Discord https://discord.gg/EsctDWSTwM
 
 ## Next meetup
 
