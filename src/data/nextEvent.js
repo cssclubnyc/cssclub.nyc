@@ -1,6 +1,11 @@
+import currentEvent from "./2023-08.js";
+
+const { datetime, url, lineup } = currentEvent;
+
 export default {
-  datetime: "Tuesday, August 15th, 7-9pm",
-  url: "https://ti.to/css-club-nyc/august-2023",
+  datetime,
+  url,
+  lineup,
   location: {
     title: "Resobox East Village",
     addr: "91 E 3rd St, NYC",

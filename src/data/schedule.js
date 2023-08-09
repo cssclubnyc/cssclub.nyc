@@ -1,8 +1,32 @@
+import nextEvent from "./nextEvent.js";
+
+// TODO: This switch without a code change
+const nextEventScheduled = true;
+const futureLineup = [
+  {
+    time: "7:15pm",
+    title: "First speaker",
+    excerpt: "Want to be our <a href='/cfp'>first speaker</a>?",
+  },
+  {
+    time: "7:35pm",
+    title: "Second speaker",
+    excerpt: "Want to be our <a href='/cfp'>second speaker</a>?",
+  },
+  {
+    time: "7:55pm",
+    title: "Third speaker",
+    excerpt: "Want to be our <a href='/cfp'>third speaker</a>?",
+  },
+];
+
+const lineup = nextEventScheduled ? nextEvent.lineup : futureLineup;
+
 export default [
   {
     time: "Now",
     title: "Get your ticket",
-    desc: "<a href='https://ti.to/css-club-nyc/august-2023'>Tickets are $15</a>.",
+    desc: `<a href='${nextEvent.url}'>Tickets are $15</a>.`,
   },
   {
     time: "6:45pm",
@@ -14,21 +38,7 @@ export default [
     title: "Intro",
     desc: "A short welcome and intro to tonight’s speakers.",
   },
-  {
-    time: "7:15pm",
-    title: "First speaker",
-    desc: "Want to be our <a href='/cfp'>first speaker</a>?",
-  },
-  {
-    time: "7:35pm",
-    title: "Second speaker",
-    desc: "Want to be our <a href='/cfp'>second speaker</a>?",
-  },
-  {
-    time: "7:55pm",
-    title: "Third speaker",
-    desc: "Want to be our <a href='/cfp'>third speaker</a>?",
-  },
+  ...lineup,
   {
     time: "8:10pm",
     title: "Wrap-up",
