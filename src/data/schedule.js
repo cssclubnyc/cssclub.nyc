@@ -6,17 +6,17 @@ const futureLineup = [
   {
     time: "7:15pm",
     title: "First speaker",
-    desc: "Want to be our <a href='/cfp'>first speaker</a>?",
+    excerpt: "Want to be our <a href='/cfp'>first speaker</a>?",
   },
   {
     time: "7:35pm",
     title: "Second speaker",
-    desc: "Want to be our <a href='/cfp'>second speaker</a>?",
+    excerpt: "Want to be our <a href='/cfp'>second speaker</a>?",
   },
   {
     time: "7:55pm",
     title: "Third speaker",
-    desc: "Want to be our <a href='/cfp'>third speaker</a>?",
+    excerpt: "Want to be our <a href='/cfp'>third speaker</a>?",
   },
 ];
 
