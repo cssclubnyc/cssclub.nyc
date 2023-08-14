@@ -3,6 +3,8 @@ import currentEvent from "./2023-08.js";
 const { datetime, url, lineup } = currentEvent;
 
 export default {
+  upcoming: false,
+  soldOut: true,
   datetime,
   url,
   lineup,
