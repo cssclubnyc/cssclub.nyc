@@ -21,22 +21,16 @@ const futureLineup = [
 ];
 
 const lineup = nextEventScheduled ? nextEvent.lineup : futureLineup;
-
-export default [
-  {
-    time: "Now",
-    title: "Get your ticket",
-    desc: `<a href='${nextEvent.url}'>Tickets are $15</a>.`,
-  },
+let schedule = [
   {
     time: "6:45pm",
     title: "Doors open",
-    desc: "Come on in, grab a beverage, and say hello.",
+    excerpt: "Come on in, grab a beverage, and say hello.",
   },
   {
     time: "7:00pm",
     title: "Intro",
-    desc: "A short welcome and intro to tonight’s speakers.",
+    excerpt: "A short welcome and intro to tonight’s speakers.",
   },
   ...lineup,
   {
@@ -46,11 +40,21 @@ export default [
   {
     time: "8:15pm",
     title: "Club chat",
-    desc: "Meet and chat with your club mates.",
+    excerpt: "Meet and chat with your club mates.",
   },
   {
     time: "9:00pm",
     title: "Close",
-    desc: "You don’t have to go home, but you can’t stay here.",
+    excerpt: "You don’t have to go home, but you can’t stay here.",
   },
 ];
+
+if (!nextEvent.soldOut) {
+  schedule.unshift({
+    time: "Now",
+    title: "Get your ticket",
+    excerpt: `<a href='${nextEvent.url}'>Tickets are $15</a>.`,
+  });
+}
+
+export default schedule;

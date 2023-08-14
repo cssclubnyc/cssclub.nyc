@@ -13,7 +13,15 @@ import nextEvent from "@data/nextEvent.js";
     <p class="addr">{nextEvent.location.addr}</p>
   </div>
 
-  <a href={nextEvent.url} class="btn">Get your ticket</a>
+  {
+    !nextEvent.soldOut && (
+      <a href={nextEvent.url} class="btn">
+        Get your ticket
+      </a>
+    )
+  }
+
+  {nextEvent.soldOut && <a class="btn disabled">Sold out</a>}
 </div>
 
 <style>
