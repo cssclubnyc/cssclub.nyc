@@ -1,6 +1,7 @@
 export default {
   datetime: "Tuesday, August 15th, 7-9pm",
   url: "https://ti.to/css-club-nyc/august-2023",
+  soldOut: true,
   lineup: [
     {
       time: "7:15pm",
