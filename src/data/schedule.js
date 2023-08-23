@@ -1,27 +1,24 @@
 import nextEvent from "./nextEvent.js";
-const { soldOut, upcoming } = nextEvent;
-
-// TODO: This switch without a code change
-const nextEventScheduled = false;
+const { lineup, ticketsOnSale } = nextEvent;
 const futureLineup = [
   {
     time: "7:15pm",
     title: "First speaker",
-    excerpt: "Want to be our <a href='/cfp'>first speaker</a>?",
+    excerpt: "Want to be a <a href='/cfp'>speaker</a>?",
   },
   {
     time: "7:35pm",
     title: "Second speaker",
-    excerpt: "Want to be our <a href='/cfp'>second speaker</a>?",
+    excerpt: "Want to be a <a href='/cfp'>speaker</a>?",
   },
   {
     time: "7:55pm",
     title: "Third speaker",
-    excerpt: "Want to be our <a href='/cfp'>third speaker</a>?",
+    excerpt: "Want to be a <a href='/cfp'>speaker</a>?",
   },
 ];
 
-const lineup = nextEventScheduled ? nextEvent.lineup : futureLineup;
+const lineupPrepped = [0, 1, 2].map((_, i) => lineup[i] || futureLineup[i]);
 let schedule = [
   {
     time: "6:45pm",
@@ -33,7 +30,7 @@ let schedule = [
     title: "Intro",
     excerpt: "A short welcome and intro to tonight’s speakers.",
   },
-  ...lineup,
+  ...lineupPrepped,
   {
     time: "8:10pm",
     title: "Wrap-up",
@@ -50,7 +47,7 @@ let schedule = [
   },
 ];
 
-if (!soldOut && !upcoming) {
+if (ticketsOnSale) {
   schedule.unshift({
     time: "Now",
     title: "Get your ticket",
