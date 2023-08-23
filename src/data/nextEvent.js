@@ -1,6 +1,6 @@
 import { getEntry } from "astro:content";
 
-const currentEventId = "2023-09";
+const currentEventId = import.meta.env.CURRENT_EVENT_ID;
 const { data: currentEvent } = await getEntry("events", currentEventId);
 const { datetime, url, lineup, soldOut } = currentEvent;
 

@@ -10,6 +10,12 @@ If you see a typo or a bug, PRs and issues are always welcome.
 
 ## Local setup
 
+**Set environment variables**
+
+We set build variables via the Netlify UI. For local development, we use a `.env` file. Copy `.env.example` to `.env`.
+
+`CURRENT_EVENT_ID` must be an event collection id. See `src/content/events`. The event id is the filename without the `.json` extension.
+
 **Install dependencies**
 
 ```
