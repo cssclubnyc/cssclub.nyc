@@ -1,12 +1,7 @@
 ---
 import nextEvent from "@data/nextEvent.js";
-const {
-  soldOut,
-  upcoming,
-  url,
-  datetime,
-  location
-} = nextEvent;
+const { soldOut, upcoming, url, datetime, location } = nextEvent;
+const showTicketsBtn = !soldOut && !upcoming;
 ---
 
 <div class="container">
@@ -21,8 +16,8 @@ const {
   </div>
 
   {
-    !soldOut && !upcoming (
-      <a href={nextEvent.url} class="btn">
+    showTicketsBtn && (
+      <a href={url} class="btn">
         Get your ticket
       </a>
     )
