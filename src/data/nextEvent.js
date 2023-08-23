@@ -1,10 +1,10 @@
-import currentEvent from "./2023-08.js";
+import currentEvent from "./2023-09.js";
 
 const { datetime, url, lineup } = currentEvent;
 
 export default {
-  upcoming: false,
-  soldOut: true,
+  upcoming: true,
+  soldOut: false,
   datetime,
   url,
   lineup,

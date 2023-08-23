@@ -1,27 +1,30 @@
 ---
 import nextEvent from "@data/nextEvent.js";
+const { soldOut, upcoming, url, datetime, location } = nextEvent;
+const showTicketsBtn = !soldOut && !upcoming;
 ---
 
 <div class="container">
   <h3 class="heading-mini">Next meetup</h3>
-  <p>{nextEvent.datetime}</p>
+  <p>{datetime}</p>
 
   <div class="location">
     <p class="loc-title">
-      <a href={nextEvent.location.url}>{nextEvent.location.title}</a>
+      <a href={location.url}>{location.title}</a>
     </p>
-    <p class="addr">{nextEvent.location.addr}</p>
+    <p class="addr">{location.addr}</p>
   </div>
 
   {
-    !nextEvent.soldOut && (
-      <a href={nextEvent.url} class="btn">
+    showTicketsBtn && (
+      <a href={url} class="btn">
         Get your ticket
       </a>
     )
   }
 
-  {nextEvent.soldOut && <a class="btn disabled">Sold out</a>}
+  {upcoming && <a class="btn disabled">On sale soon</a>}
+  {soldOut && <a class="btn disabled">Sold out</a>}
 </div>
 
 <style>

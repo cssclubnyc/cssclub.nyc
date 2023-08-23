@@ -1,7 +1,8 @@
 import nextEvent from "./nextEvent.js";
+const { soldOut, upcoming } = nextEvent;
 
 // TODO: This switch without a code change
-const nextEventScheduled = true;
+const nextEventScheduled = false;
 const futureLineup = [
   {
     time: "7:15pm",
@@ -49,7 +50,7 @@ let schedule = [
   },
 ];
 
-if (!nextEvent.soldOut) {
+if (!soldOut && !upcoming) {
   schedule.unshift({
     time: "Now",
     title: "Get your ticket",
