@@ -1,7 +1,7 @@
 import nextEvent from "./nextEvent.js";
 
 // TODO: This switch without a code change
-const nextEventScheduled = true;
+const nextEventScheduled = false;
 const futureLineup = [
   {
     time: "7:15pm",
