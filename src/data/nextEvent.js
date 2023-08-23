@@ -1,5 +1,7 @@
-import currentEvent from "./2023-09.js";
+import { getEntry } from "astro:content";
 
+const currentEventId = "2023-09";
+const { data: currentEvent } = await getEntry("events", currentEventId);
 const { datetime, url, lineup, soldOut } = currentEvent;
 
 export default {

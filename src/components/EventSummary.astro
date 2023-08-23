@@ -22,8 +22,11 @@ const { soldOut, url, datetime, location, ticketsOnSale } = nextEvent;
     )
   }
 
-  {!ticketsOnSale && <a class="btn disabled">On sale soon</a>}
-  {soldOut && <a class="btn disabled">Sold out</a>}
+  {
+    (!ticketsOnSale || soldOut) && (
+      <a class="btn disabled">{soldOut ? "Sold out" : "On sale soon"}</a>
+    )
+  }
 </div>
 
 <style>
