@@ -27,6 +27,10 @@ const { soldOut, url, datetime, location, ticketsOnSale } = nextEvent;
       <a class="btn disabled">{soldOut ? "Sold out" : "On sale soon"}</a>
     )
   }
+
+  <div class="cfp-shout">
+    <a href="/cfp">Want to be a speaker?</a>
+  </div>
 </div>
 
 <style>
@@ -42,5 +46,10 @@ const { soldOut, url, datetime, location, ticketsOnSale } = nextEvent;
 
   .addr {
     margin-top: 0;
+  }
+
+  .cfp-shout {
+    font-size: var(--font-size-14);
+    margin-top: var(--sp3);
   }
 </style>
