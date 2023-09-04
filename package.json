@@ -16,6 +16,6 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "astro": "2.8.1"
+    "astro": "3.0.8"
   }
 }
