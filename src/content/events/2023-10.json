@@ -7,6 +7,11 @@
       "time": "7:15pm",
       "title": "<a href='https://bento.me/donnie'>Donnie D'Amato</a> - “HTML by CSS”",
       "desc": "What if we made HTML by writing CSS?"
+    },
+    {
+      "time": "7:35pm",
+      "title": "<a href='https://snugug.com'>Sam Richard</a> - “Container and Style Queries Are Magic”",
+      "desc": "Learn the basics of container queries, how they can improve your design systems and responsive designs, and how style queries, container queries for specific properties, can let you build truly dynamic and semantic styles."
     }
   ]
 }
