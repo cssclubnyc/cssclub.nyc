@@ -1,0 +1,12 @@
+{
+  "datetime": "Monday, October 16th, 7-9pm",
+  "url": null,
+  "soldOut": false,
+  "lineup": [
+    {
+      "time": "7:15pm",
+      "title": "<a href='https://bento.me/donnie'>Donnie D'Amato</a> - “HTML by CSS”",
+      "desc": "What if we made HTML by writing CSS?"
+    }
+  ]
+}
