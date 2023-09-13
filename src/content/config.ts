@@ -15,7 +15,7 @@ const eventsCollection = defineCollection({
           excerpt: z.string().optional(),
           desc: z.string().optional(),
         })
-        .optional()
+        .optional(),
     ),
   }),
 });
