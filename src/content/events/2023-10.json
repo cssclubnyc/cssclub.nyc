@@ -12,6 +12,11 @@
       "time": "7:35pm",
       "title": "<a href='https://snugug.com'>Sam Richard</a> - “Container and Style Queries Are Magic”",
       "desc": "Learn the basics of container queries, how they can improve your design systems and responsive designs, and how style queries, container queries for specific properties, can let you build truly dynamic and semantic styles."
+    },
+    {
+      "time": "7:55pm",
+      "title": "<a href='https://olex.co/'>Olex Ponomarenko</a> - “CSS Page Transitions (Sane and Not)”",
+      "desc": "A quick intro to CSS Page Transitions, and a couple demos to show off what you can do with them! Not for those who prefers-reduced-motion."
     }
   ]
 }
