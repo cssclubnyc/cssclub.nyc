@@ -1,3 +1,7 @@
+---
+const hasNews = false;
+---
+
 <style>
   .container {
     border: 1px solid var(--color-accent-info-low);
@@ -9,6 +13,4 @@
   }
 </style>
 
-<div class="container">
-  2023-09-12: Unfortunately we had to cancel the September meetup, we'll be back October 16th (grab a ticket!). <a href="https://buttondown.email/contact/archive/september-meetup-cancelled-see-you-in-october/">More details in our newsletter</a>.
-</div>
+{hasNews && <div class="container"></div>}
