@@ -1,0 +1,17 @@
+{
+  "datetime": "Monday, November 20th, 7-9pm",
+  "url": "https://ti.to/css-club-nyc/2023-11",
+  "soldOut": false,
+  "lineup": [
+    {
+      "time": "7:15pm",
+      "title": "<a href='https://brendastorer.com/'>Brenda Storer</a>",
+      "desc": ""
+    },
+    {
+      "time": "7:35pm",
+      "title": "<a href='https://webperf.social/@SergeyChe'>Sergey Chernyshev</a> - “UX Speed Design”",
+      "desc": "Making a fast user experience should be intentional and part of the same process as product development, visual design and feature implementation rather than being left to optimization stages after production deployment or regressions. Sergey talks about embedding speed design into early stages of product creation so visual designers and product managers can enjoy making user experience great as much as developers do and feel empowered to make web performance decisions and plan implementations accordingly rather than scramble at the end."
+    }
+  ]
+}
