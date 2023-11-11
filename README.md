@@ -9,8 +9,7 @@ A joyful meetup for people who style.
 
 ## Next meetup
 
-- Monday, November 20th at 7pm (doors at 6:45pm)
-- Resobox East Village - 91 E 3rd St, NYC
+- On break until 2024
 
 ## Contributing to this repo
 

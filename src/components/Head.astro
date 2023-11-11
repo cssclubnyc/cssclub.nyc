@@ -11,8 +11,9 @@ const defaultPageDesc =
 const { pageTitle = defaultPageTitle } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imgName = import.meta.env.CURRENT_EVENT_ID ? `event-${import.meta.env.CURRENT_EVENT_ID}.jpg` : "social-default.jpg"; 
 const socialImageURL = new URL(
-  `/images/social/event-${import.meta.env.CURRENT_EVENT_ID}.jpg`,
+  `/images/social/${imgName}`,
   Astro.url
 );
 ---
